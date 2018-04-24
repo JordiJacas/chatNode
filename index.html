@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div id="formModal" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="title-modal"></h2>
+              </div>
+              <div class="modal-body">
+                <p class="formModal"></p>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+        <div id="title" class="well weel-sm text-center">
+          <h2>Chat de Jordi</h2>
+        </div>
+        <div id="containerMessages" class="col-md-8">
+          <div class="panel panel-primary head">
+            <div class="weel weel-sm text-center">
+              <p>Chat</p>
+            </div>
+          </div>
+          <div id="chatMsgs"></div>
+        </div>
+        <div id="containerUsers" class="col-md-4">
+          <div class="panel panel-primary head">
+            <div class="weel weel-sm text-center">
+              <p>Users</p>
+            </div>
+          </div>
+          <div id="chatUsers"></div>
+        </div>
+        <div id="containerSendMessages" class="col-md-7">
+          <input type="text" placeholder="Mensaje" class="message col-md-12 form-control"/>
+        </div>
+        <div id="containerSendMessages" class="col-md-2">
+          <button class="btn btn-block btn-primary sendMsg">Enviar</button>
+        </div>
+      </div>
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/javascripts/functions.js"></script>
+  </body>
+</html>
